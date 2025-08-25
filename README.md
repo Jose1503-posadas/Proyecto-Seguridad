@@ -21,7 +21,7 @@ El objetivo principal del proyecto es demostrar cómo se pueden combinar técnic
 
 - **Python 3**  
 - **Flask** (para la creación de la aplicación web)  
-- HTML, CSS y JavaScript (para la interfaz de usuario)  
+- **HTML**, **CSS** y **JavaScript** (para la interfaz de usuario)  
 
 ---
 
