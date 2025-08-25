@@ -1,0 +1,358 @@
+/* From Uiverse.io by omriluz */ 
+.form-container {
+  width: 400px;
+  background: linear-gradient(#212121, #212121) padding-box,
+              linear-gradient(145deg, transparent 35%,#e81cff, #37a1f8) border-box;
+  border: 2px solid transparent;
+  padding: 55px 63px;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif; 
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 16px;
+  background-size: 200% 100%;
+	-webkit-animation: gradient 5s ease infinite;
+	        animation: gradient 5s ease infinite;
+}
+
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+.form-container .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.form-container .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2px;
+}
+
+.form-container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 20px; 
+}
+
+.form-container .form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #d54cff;
+  margin-top: 10px; 
+}
+
+.form-container .form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  resize: none;
+  color: #fff;
+  height: 96px;
+  border: 1px solid #46c2fb;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.form-container .form-group input::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input::-moz-placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input:-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input::-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input::placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+.form-container .form-group textarea:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+.form-container {
+  position: relative; /* Añadir esta línea para establecer un contexto de posicionamiento */
+}
+
+.form-container .button {
+  position: relative; /* Contexto para pseudoelementos */
+  z-index: 2; /* Para que el texto esté encima */
+  width: 120px;
+  height: 40px;
+  background-color: #000; /* Fondo negro para el botón */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Asegura que el texto sea blanco */
+  font-size: 16px;
+  font-weight: bold;
+  overflow: hidden; /* Evita que pseudoelementos sobresalgan */
+  margin-top: 20px; 
+}
+
+.form-container .button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 128px;
+  height: 48px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
+  z-index: -1; /* Colocado detrás del texto */
+  pointer-events: none; /* No interfiere con eventos del mouse */
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.form-container .button::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+  z-index: -1; /* Detrás de `::before` */
+}
+
+.form-container .button:hover::before {
+  transform: rotate(-180deg); /* Agrega rotación al efecto */
+}
+
+.form-container .button:hover::after {
+  filter: blur(30px);
+
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center; /*centra horizontalmente */
+  align-items: center; /*centra verticalmente */
+}
+
+
+/*Formato para el titulo de la interfaz grafica */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+
+.text {
+  fill: none;
+  stroke-width: 6;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 6s infinite linear;
+  animation: stroke 6s infinite linear;
+}
+
+.text:nth-child(5n + 1) {
+  stroke: #8e35fb;
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+.text:nth-child(5n + 2) {
+  stroke: #f503c1;
+  -webkit-animation-delay: -2.4s;
+  animation-delay: -2.4s;
+}
+
+.text:nth-child(5n + 3) {
+  stroke: #ff7ade;
+  -webkit-animation-delay: -3.6s;
+  animation-delay: -3.6s;
+}
+
+.text:nth-child(5n + 4) {
+  stroke: #4094fc;
+  -webkit-animation-delay: -4.8s;
+  animation-delay: -4.8s;
+}
+
+.text:nth-child(5n + 5) {
+  stroke: #4bbbf3;
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+}
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+/* Other styles */
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #212121;
+  background-size: .2em 100%;
+  font: 14.5em/1 Open Sans, Impact;
+  margin: 0;
+  display: flex;  /*flexbox para distribuir los elementos */
+  flex-direction: column; /* Apilar los elementos de arriba hacia abajo */
+  height: 100vh; /* altura ventana */
+  justify-content: flex-start; /*elementos empiecen desde arriba */
+}
+
+svg {
+  position: top;
+  width: 100%;
+  height: 100%;
+}
+
+/* Contenedor para el letrero de CIFRADO */
+.banner-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* SVG del banner */
+.banner {
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Nuevo contenedor para agrupar el formulario */
+.form-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centra el formulario */
+  margin-top: 30px;  /* Espacio entre el título y el formulario */
+}
+
+.result-group {
+  width: 400px;
+  background: linear-gradient(#212121, #212121) padding-box,
+              linear-gradient(145deg, transparent 35%,#e81cff, #37a1f8) border-box;
+  border: 2px solid transparent;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif; 
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 16px;
+  background-size: 200% 100%;
+  animation: gradient 5s ease infinite;
+}
+
+.result-group label {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.result-group textarea {
+  width: 100%;
+  padding: 6px 7px;
+  border-radius: 8px;
+  resize: none;
+  color: #fff;
+  height: 60px;
+  border: 1px solid #46c2fb;
+  background-color: transparent;
+  font-family: inherit;
+  margin-top: 12px;
+}
+
+.result-group textarea:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+/* Anima el fondo de los resultados igual que el formulario */
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.centered-title {
+  text-align: center;
+  color: white; 
+  font-size: 30px;
+}
