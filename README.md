@@ -19,7 +19,7 @@ El objetivo principal del proyecto es demostrar cómo se pueden combinar técnic
 
 ## Tecnologías utilizadas
 
-- **Python 3**  
+- **Python 3** (Backend)
 - **Flask** (para la creación de la aplicación web)  
 - **HTML**, **CSS** y **JavaScript** (para la interfaz de usuario)  
 
