@@ -29,4 +29,4 @@ El objetivo principal del proyecto es demostrar cómo se pueden combinar técnic
 
 1. Clonar el repositorio:  
 ```bash
-git clone https://github.com/tu_usuario/tu_repositorio.git
+git clone https://github.com/Jose1503-posadas/Proyecto-Seguridad.git
